@@ -1,10 +1,9 @@
 # Ice Breaker
 <img src="./icebreaker.png" alt="icebreaker" width="200"/>
-<!-- ![Ice Breaker Icon](./icebreaker.png) -->
 
 A discord bot written in Python with over 49k trivia questions and over 2,500 questions from the categories of Never Have I Ever, Would You Rather, Truth, Dare, and What Would You Do.
 
-The trivia questions are from [OpenTriviaQA](https://github.com/uberspot/OpenTriviaQA) and converted to json using [./converter.py].
+The trivia questions are from [OpenTriviaQA](https://github.com/uberspot/OpenTriviaQA) and converted to json using [./converter.py](https://github.com/NMedvesky/icebreaker/blob/b6e48c72b737f74b39a4fd72002f04438249ac4e/converter.py).
 The other questions are from [Would You Bot - Client](https://github.com/Would-You-Bot/client).
 
 All code in this project has been created by me ([NMedvesky](https://github.com/NMedvesky)).
@@ -20,7 +19,7 @@ pip install -r ./requirements.txt
 
 ## Config
 
-Set the bot token in [./src/bot.py]
+Set the bot token in [./src/bot.py](https://github.com/NMedvesky/icebreaker/blob/b6e48c72b737f74b39a4fd72002f04438249ac4e/src/bot.py)
 It is recommended to use environment variables to store the token rather than in plain text.
 Also define any discord users with permission to use the /reload command.
 ```py
@@ -30,7 +29,7 @@ ADMIN_IDS: list[int] = []
 
 ## Running the Bot
 
-In a terminal window run [./src/bot.py] while in the main project directory.
+In a terminal window run [./src/bot.py](https://github.com/NMedvesky/icebreaker/blob/b6e48c72b737f74b39a4fd72002f04438249ac4e/src/bot.py) while in the main project directory.
 ```sh
 python ./src/bot.py
 ```
