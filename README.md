@@ -6,8 +6,6 @@ A discord bot written in Python with over 49k trivia questions and over 2,500 qu
 The trivia questions are from [OpenTriviaQA](https://github.com/uberspot/OpenTriviaQA) and converted to json using [./converter.py](https://github.com/NMedvesky/icebreaker/blob/b6e48c72b737f74b39a4fd72002f04438249ac4e/converter.py).
 The other questions are from [Would You Bot - Client](https://github.com/Would-You-Bot/client).
 
-All code in this project has been created by me ([NMedvesky](https://github.com/NMedvesky)).
-
 # Getting Started
 
 ## Setting Up Environment
@@ -19,9 +17,9 @@ pip install -r ./requirements.txt
 
 ## Config
 
-Set the bot token in [./src/bot.py](https://github.com/NMedvesky/icebreaker/blob/b6e48c72b737f74b39a4fd72002f04438249ac4e/src/bot.py)
+Set the bot token in [./src/bot.py](https://github.com/NMedvesky/icebreaker/blob/b6e48c72b737f74b39a4fd72002f04438249ac4e/src/bot.py).
 It is recommended to use environment variables to store the token rather than in plain text.
-Also define any discord users with permission to use the /reload command.
+Also define any discord users with permission to use the `reload` command.
 ```py
 TOKEN: str = os.environ["ICEBREAKER_TOKEN"]
 ADMIN_IDS: list[int] = []
@@ -35,7 +33,7 @@ python ./src/bot.py
 ```
 
 After running it should output something like this.
-```sh
+```
 2024-04-04 13:26:43 INFO     discord.client logging in using static token
 18:26:44 UTC Loaded question_commands Extension
 18:26:44 UTC Loaded trivia_commands Extension
